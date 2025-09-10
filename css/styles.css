@@ -1,0 +1,218 @@
+.buttonnr {
+  background: #d65858;
+  border-color: orange;
+  color: orange;
+}
+.buttonnr:hover {
+  background: orange;
+  border-color: black;
+  color: black;
+}
+
+/*colores variables*/
+header .logo {
+  width: 10vw;
+}
+@media screen and (max-width: 1280px) {
+  header .logo {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    width: 90vw;
+  }
+}
+header .navbar-container {
+  gap: 17rem;
+  height: 5rem;
+}
+@media screen and (max-width: 1280px) {
+  header .navbar-container {
+    gap: 6rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar-container {
+    gap: 3rem;
+    height: 1rem;
+  }
+}
+header .navbar-container .navbar-toggler {
+  background: rgb(255, 136, 0) !important;
+}
+@media screen and (max-width: 768px) {
+  header .navbar-container .navbar-toggler {
+    position: absolute;
+    right: 1rem;
+    top: 7rem;
+  }
+}
+header .navbar-container .navbar-list {
+  gap: 10rem;
+}
+@media screen and (max-width: 1280px) {
+  header .navbar-container .navbar-list {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar-container .navbar-list {
+    display: grid;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin: 0 !important;
+    background: black;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+header .navbar-container .navbar-list .nav-list {
+  position: static;
+}
+header .navbar-container .navbar-list .nav-list .menu {
+  color: white !important;
+}
+header .navbar-container .navbar-list .nav-list .menu:hover {
+  color: #d65858 !important;
+  background-color: rgba(214, 88, 88, 0.4431372549);
+  padding: 1rem;
+}
+header .buttonnr {
+  background: #d1571f;
+  border-color: orange;
+  color: orange;
+}
+header .buttonnr:hover {
+  background: orange;
+  border-color: black;
+  color: black;
+}
+
+main {
+  /*index*/
+  /*portfolio*/
+}
+main .maindex {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+}
+main .maindex .titulopresentacion {
+  display: block;
+  width: 65vw;
+  font-size: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+  color: antiquewhite;
+}
+main .maindex .titulopresentacion span {
+  color: rgb(231, 188, 135);
+}
+main .maindex .titulopresentacion span:hover {
+  color: rgb(228, 156, 68);
+}
+@media screen and (max-width: 1280px) {
+  main .maindex .titulopresentacion {
+    width: 80vw;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .maindex .titulopresentacion {
+    padding-top: 8rem;
+  }
+}
+main .maindex h2.trabajospresentacion {
+  padding: 4rem;
+  font-size: 6rem;
+  width: 70vw;
+  text-align: center;
+  color: rgb(247, 174, 86);
+}
+main .maindex h2.trabajospresentacion:hover {
+  transition: 1s;
+  font-size: 6.3rem;
+  color: rgb(238, 138, 15);
+}
+@media screen and (max-width: 1280px) {
+  main .maindex h2.trabajospresentacion:hover {
+    width: 80vw;
+    font-size: 3.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .maindex h2.trabajospresentacion:hover {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  main .maindex h2.trabajospresentacion {
+    width: 80vw;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .maindex h2.trabajospresentacion {
+    font-size: 2rem;
+  }
+}
+main .imgproyectos {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  main .imgproyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .imgproyectos .card {
+  border: 0;
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  background: linear-gradient(90deg, rgb(27, 4, 5) 0%, rgb(58, 11, 0) 16.667%, rgb(94, 27, 0) 33.333%, rgb(132, 51, 0) 50%, rgb(166, 80, 1) 66.667%, rgb(194, 112, 13) 83.333%, rgb(212, 143, 28) 100%);
+}
+@media screen and (max-width: 768px) {
+  main .imgproyectos .card {
+    margin: 1rem;
+  }
+}
+main .imgproyectos .card a {
+  background: #d1571f;
+  border-color: orange;
+  color: orange;
+  width: 10vw;
+  align-content: center;
+  margin: 1rem;
+}
+main .imgproyectos .card a:hover {
+  background: orange;
+  border-color: black;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  main .imgproyectos .card a {
+    display: inline-table;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black !important;
+}
+
+.bg-body-tertiary {
+  background-color: black !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

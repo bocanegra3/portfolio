@@ -1,0 +1,50 @@
+@use 'media-queris';
+@use 'mixins';
+header{
+    .logo{
+        width: 10vw;
+        @include media-queris.laptops{width: 15vw;}
+        @include media-queris.mobile{width:90vw}
+    }
+    .navbar-container{
+        gap:17rem;
+        height: 5rem;
+        @include media-queris.laptops{gap:6rem;height: 4rem;}
+        @include media-queris.mobile{gap:3rem;height: 1rem;}
+        .navbar-toggler {
+       background: rgb(255, 136, 0)!important;
+             @include media-queris.mobile{        
+            position: absolute;
+            right: 1rem;
+            top: 7rem;
+        }  
+        }
+        .navbar-list{
+        gap:10rem; 
+        @include media-queris.laptops{gap:4rem;}  
+     @include media-queris.mobile{
+                display: grid;
+                flex-wrap: wrap;
+                justify-items: center;
+                margin: 0 !important;
+                background: black;
+                padding-left:8rem;
+                padding-right:8rem;
+        }    
+          
+        .nav-list{
+            position:static;
+            .menu{
+              color:white!important;
+                 &:hover{
+                 color: #d65858!important;
+                 background-color: #d6585871;
+                 padding:  1rem;
+                 
+                 }
+            }
+        }
+        }
+    }
+    .buttonnr{@include mixins.button(orange); }
+}
