@@ -1,14 +1,3 @@
-.buttonnr {
-  background: #d65858;
-  border-color: orange;
-  color: orange;
-}
-.buttonnr:hover {
-  background: orange;
-  border-color: black;
-  color: black;
-}
-
 /*colores variables*/
 header .logo {
   width: 10vw;
@@ -47,6 +36,15 @@ header .navbar-container .navbar-toggler {
     position: absolute;
     right: 1rem;
     top: 7rem;
+  }
+}
+header .navbar-container div.navbar-collapse {
+  gap: 3rem;
+}
+@media screen and (max-width: 768px) {
+  header .navbar-container div.navbar-collapse {
+    background-color: black;
+    z-index: 100;
   }
 }
 header .navbar-container .navbar-list {
@@ -217,9 +215,9 @@ main .maindex {
 }
 main .maindex .titulopresentacion {
   display: block;
-  width: 65vw;
+  width: 80vw;
   font-size: 3rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
   text-align: center;
   color: antiquewhite;
 }
@@ -243,14 +241,14 @@ main .maindex .titulopresentacion span:hover {
 }
 main .maindex h2.trabajospresentacion {
   padding: 4rem;
-  font-size: 6rem;
+  font-size: 4.9rem;
   width: 70vw;
   text-align: center;
   color: rgb(247, 174, 86);
 }
 main .maindex h2.trabajospresentacion:hover {
   transition: 1s;
-  font-size: 6.3rem;
+  font-size: 5rem;
   color: rgb(238, 138, 15);
 }
 @media screen and (max-width: 1280px) {
@@ -301,6 +299,11 @@ main .imgproyectos .card {
     margin: 1rem;
   }
 }
+@media screen and (max-width: 1280px) {
+  main .imgproyectos .card {
+    width: 18rem !important;
+  }
+}
 main .imgproyectos .card a {
   background: #d1571f;
   border-color: orange;
@@ -319,16 +322,40 @@ main .imgproyectos .card a:hover {
     display: inline-table;
   }
 }
-main .tituloproyectos {
-  color: orange;
+@media screen and (max-width: 768px) {
+  main .maindexport {
+    position: absolute;
+    top: 10rem;
+  }
+}
+main .maindexport .tituloproyectos {
+  color: rgb(255, 255, 255);
   font-size: 4rem;
   padding: 3rem;
 }
-main .subtituloproyectos {
-  color: rgb(190, 76, 0);
+@media screen and (max-width: 1280px) {
+  main .maindexport .tituloproyectos {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+}
+main .maindexport .subtituloproyectos {
+  color: orange;
   font-style: italic;
   padding: 1rem;
   font-size: 3rem;
+}
+@media screen and (max-width: 1280px) {
+  main .maindexport .subtituloproyectos {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .imgportfolio {
+    position: absolute;
+    top: 30rem;
+  }
 }
 main .imgportfolio ul {
   display: flex;
@@ -347,6 +374,56 @@ main .imgportfolio ul li {
 main .imgportfolio ul li .bounce-in-top {
   -webkit-animation: bounce-in-top 1.1s both;
   animation: bounce-in-top 1.1s both;
+}
+@media screen and (max-width: 1280px) {
+  main .imgportfolio ul li {
+    width: 10rem;
+    padding: 1rem;
+  }
+}
+main button.shake-horizontal {
+  background: #d1571f;
+  border-color: orange;
+  color: orange;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-content: right;
+}
+main button.shake-horizontal:hover {
+  background: orange;
+  border-color: black;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+footer a {
+  background: #d1571f;
+  border-color: orange;
+  color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 1REM;
+}
+footer a:hover {
+  background: orange;
+  border-color: black;
+  color: black;
+}
+footer a:hover {
+  background: orange;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  footer a {
+    position: absolute;
+    top: 70rem;
+  }
 }
 
 body {

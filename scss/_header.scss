@@ -19,6 +19,13 @@ header{
             top: 7rem;
         }  
         }
+        div.navbar-collapse{
+            gap:3rem;
+        @include media-queris.mobile{
+        background-color: black;
+        z-index: 100;
+        }
+    }
         .navbar-list{
         gap:10rem; 
         @include media-queris.laptops{gap:4rem;}  

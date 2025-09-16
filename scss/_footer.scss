@@ -1,0 +1,28 @@
+@use 'media-queris';
+@use 'mixins';
+@use 'variables';
+@use 'keyframes';
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+
+    a{
+    @include mixins.button(white);    
+    border-radius: 1rem;    
+    margin:1rem;
+    text-decoration: none;         
+    color: black;
+    background: white;
+    padding: 1REM;
+       &:hover{
+            background:orange;
+            color:white;
+
+        }
+        @include media-queris.mobile{
+            position: absolute;
+            top:70rem
+        }
+    }
+}

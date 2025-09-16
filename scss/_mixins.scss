@@ -1,14 +1,3 @@
-    .buttonnr{
-        background: #d65858;
-        border-color: orange;
-        color: orange;
-        &:hover{
-            background: orange;
-            border-color: black;
-            color:black;            
-        }
-    }
-
     @mixin button($color, $hover-color:black) {
         background: #d1571f;
         border-color: orange;
