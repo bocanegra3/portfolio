@@ -1,7 +1,9 @@
 @use 'media-queris';
 @use 'mixins';
 @use 'keyframes';
+@use 'variables';
 main{
+    color:white;
     /*index*/
     .maindex{
     display: flex;
@@ -69,17 +71,27 @@ main{
     }
     /*portfolio*/
     .maindexport{
-        @include media-queris.mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    @include media-queris.mobile{
     position:absolute;
     top:10rem;
+    display:flow;
     }
     .tituloproyectos{
         color:rgb(255, 255, 255);
-        font-size: 4rem;
+        font-size: 7rem;
         padding: 3rem;
+        display: flex;
+        justify-content: center;
         @include media-queris.laptops{
-            font-size: 2.5rem;
+            font-size: 4rem;
             padding: 2rem;
+        }
+        @include media-queris.mobile{
+            display: flow;
         }
     }
     .subtituloproyectos{
@@ -87,16 +99,19 @@ main{
         font-style: italic;
         padding:1rem;
         font-size: 3rem;
+        display: flex;
+        justify-content: center;
             @include media-queris.laptops{
             font-size: 2rem;
             padding: 0.5rem;
+            display: flow;
         }
         }
     }
    .imgportfolio{    
     @include media-queris.mobile{
         position: absolute;
-        top:30rem;
+        top:33rem;
     }
     ul{
     display: flex;
@@ -133,6 +148,42 @@ button.shake-horizontal{
     border-radius: 1rem;
     align-content: right;
 }
+   /*quiensoy*/
+
+    .tituloquiensoy{
+     padding-right: 10rem;
+    /* align-items: revert; */
+    /* align-items: baseline; */
+    display: flow;
+    text-align: right;    
+        h1{
+        font-family: system-ui;
+        font-size: 4rem;
+        padding: 1rem;
+        color: variables.$color-orange;
+        }
+        h2{
+        font-size: xx-large;
+        font-family: monospace;
+        padding: 1rem;
+        }
+    }
+    .sobremi{
+        color: white;
+        display: flex;
+        p{
+        font-size: larger;
+        font-family: monospace;
+        width: 45rem;
+        padding: 6rem;
+        padding-left: 12rem;
+        margin: 2rem;
+        }
+        img{
+           width: 30vw;
+           margin-left: 15rem;
+        }
+    }
    
 
 }

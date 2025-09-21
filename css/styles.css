@@ -204,8 +204,10 @@ header .buttonnr:hover {
   }
 }
 main {
+  color: white;
   /*index*/
   /*portfolio*/
+  /*quiensoy*/
 }
 main .maindex {
   display: flex;
@@ -322,21 +324,35 @@ main .imgproyectos .card a:hover {
     display: inline-table;
   }
 }
+main .maindexport {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   main .maindexport {
     position: absolute;
     top: 10rem;
+    display: flow;
   }
 }
 main .maindexport .tituloproyectos {
   color: rgb(255, 255, 255);
-  font-size: 4rem;
+  font-size: 7rem;
   padding: 3rem;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 1280px) {
   main .maindexport .tituloproyectos {
-    font-size: 2.5rem;
+    font-size: 4rem;
     padding: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .maindexport .tituloproyectos {
+    display: flow;
   }
 }
 main .maindexport .subtituloproyectos {
@@ -344,17 +360,20 @@ main .maindexport .subtituloproyectos {
   font-style: italic;
   padding: 1rem;
   font-size: 3rem;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 1280px) {
   main .maindexport .subtituloproyectos {
     font-size: 2rem;
     padding: 0.5rem;
+    display: flow;
   }
 }
 @media screen and (max-width: 768px) {
   main .imgportfolio {
     position: absolute;
-    top: 30rem;
+    top: 33rem;
   }
 }
 main .imgportfolio ul {
@@ -393,6 +412,40 @@ main button.shake-horizontal:hover {
   background: orange;
   border-color: black;
   color: black;
+}
+main .tituloquiensoy {
+  padding-right: 10rem;
+  /* align-items: revert; */
+  /* align-items: baseline; */
+  display: flow;
+  text-align: right;
+}
+main .tituloquiensoy h1 {
+  font-family: system-ui;
+  font-size: 4rem;
+  padding: 1rem;
+  color: #d65858;
+}
+main .tituloquiensoy h2 {
+  font-size: xx-large;
+  font-family: monospace;
+  padding: 1rem;
+}
+main .sobremi {
+  color: white;
+  display: flex;
+}
+main .sobremi p {
+  font-size: larger;
+  font-family: monospace;
+  width: 45rem;
+  padding: 6rem;
+  padding-left: 12rem;
+  margin: 2rem;
+}
+main .sobremi img {
+  width: 30vw;
+  margin-left: 15rem;
 }
 
 footer {
