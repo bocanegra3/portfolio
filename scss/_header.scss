@@ -1,5 +1,7 @@
 @use 'media-queris';
 @use 'mixins';
+@use 'variables';
+@use 'keyframes';
 header{
 
     .navbar-container{
@@ -28,6 +30,15 @@ header{
         }
         .navbar-list{
         gap:10rem; 
+         .menu{
+              color:white!important;
+              font-family: variables.$tipografia-nav;
+              font-size: 1.1rem;              
+                 &:hover{
+                 color: #d65858!important;
+                 background-color: #d6585871;                      
+                    }
+                }
         @include media-queris.laptops{gap:4rem;}  
      @include media-queris.mobile{
                 display: grid;
@@ -39,6 +50,7 @@ header{
                 padding-right:8rem;
                 .nav-list{
                 position:static;
+                
             .menu{
               color:white!important;
                  &:hover{
