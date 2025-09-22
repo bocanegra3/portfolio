@@ -152,15 +152,15 @@ button.shake-horizontal{
 
     .tituloquiensoy{
      padding-right: 10rem;
-    /* align-items: revert; */
-    /* align-items: baseline; */
     display: flow;
-    text-align: right;    
+    text-align: right;  
+    @include media-queris.mobile{padding-right: 0;}
         h1{
         font-family: system-ui;
         font-size: 4rem;
         padding: 1rem;
         color: variables.$color-orange;
+        @include media-queris.mobile{font-size: 2rem;}
         }
         h2{
         font-size: xx-large;
@@ -171,6 +171,7 @@ button.shake-horizontal{
     .sobremi{
         color: white;
         display: flex;
+        @include media-queris.mobile{display: flow-root;}
         p{
         font-size: larger;
         font-family: monospace;
@@ -178,12 +179,14 @@ button.shake-horizontal{
         padding: 6rem;
         padding-left: 12rem;
         margin: 2rem;
+        @include media-queris.mobile{width: 28rem;padding: 0rem;padding-left: 0rem; margin: 0rem;}
         }
         img{
            width: 30vw;
            margin-left: 15rem;
+           @include media-queris.mobile{margin-left:2rem;width: 80vw;margin-top: 2rem;}
         }
     }
    
-
 }
+.mainquiensoy{@include media-queris.mobile{position: absolute;top:11rem;}}
