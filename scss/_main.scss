@@ -82,17 +82,19 @@ main{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     @include media-queris.mobile{
     position:absolute;
     top:10rem;
-    display:flow;
+    display:flow;      
     }
     .tituloproyectos{
         color:rgb(255, 255, 255);
-         background: linear-gradient(45deg, rgba(218, 197, 116, 1.000) 0.000%, rgba(208, 143, 23, 1.000) 25.000%, rgba(178, 72, 0, 1.000) 50.000%, rgba(134, 0, 0, 1.000) 75.000%, rgba(80, 0, 0, 1.000) 100.000%);/* Degradado de izquierda a derecha con tres colores */
+        background: linear-gradient(45deg, rgba(218, 197, 116, 1.000) 0.000%, rgba(208, 143, 23, 1.000) 25.000%, rgba(178, 72, 0, 1.000) 50.000%, rgba(134, 0, 0, 1.000) 75.000%, rgba(80, 0, 0, 1.000) 100.000%);/* Degradado de izquierda a derecha con tres colores */
         -webkit-background-clip: text; /* Recorta el fondo a la forma del texto */
         color: transparent; /* Hace que el color de relleno del texto sea transparente */
-        font-size: 7rem;
+        font-size: 5rem;
         padding: 3rem;
         display: flex;
         justify-content: center;   
@@ -106,23 +108,17 @@ main{
         }
     }
     .subtituloproyectos{
-        color:rgb(255, 255, 255);
-        background: linear-gradient(90deg, rgb(51, 2, 4) 0.000%, rgba(58, 11, 0, 1.000) 16.667%, rgba(94, 27, 0, 1.000) 33.333%, rgba(132, 51, 0, 1.000) 50.000%, rgba(166, 80, 1, 1.000) 66.667%, rgba(194, 112, 13, 1.000) 83.333%, rgba(212, 143, 28, 1.000) 100.000%);
-        font-style: italic;
-        padding:3rem;
-        font-size: 3rem;
-        border-radius: 1rem;
+        color:rgb(255, 255, 255);      
+        padding:2rem;
+        font-size: 5rem;        
         display: flex;        
-        font-family: variables.$tipografia-tlos;      
+        font-family: variables.$tipografia-nav;      
         -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;  
             @include media-queris.laptops{
             font-size: 2rem;
             padding: 0.5rem;
             display: flow;
-        }
-        @include media-queris.mobile{
-            border-radius: 1rem;
         }
         }
     }
@@ -136,9 +132,9 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     
-    li{        
+    li{                
         width: 23rem;
-        padding: 5rem;
+        padding: 1rem;
         list-style-type: none;
         gap:1rem
         
@@ -178,10 +174,10 @@ button.shake-horizontal{
         font-size: 4rem;
         padding: 1rem;
         color:rgb(228, 156, 68);
-        font-family: variables.$tipografia-prp;
+        font-family: variables.$tipografia-nav;
         	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-        @include media-queris.mobile{font-size: 3rem;}
+        @include media-queris.mobile{font-size: 2.3rem;text-align: center;}
 
         }
         h2{
@@ -189,6 +185,7 @@ button.shake-horizontal{
         font-family: variables.$tipografia-tlos;
         padding: 1rem;
         color:antiquewhite;
+        @include media-queris.mobile{text-align: center; font-size: 1.2rem;}
         }
     }
     .sobremi{
@@ -196,14 +193,14 @@ button.shake-horizontal{
         display: flex;
         @include media-queris.mobile{display: flow-root;}
         p{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: variables.$tipografia-tlos;
         width: 50vw;
-        padding: 1rem;
+        padding: 3rem;
         padding-left: 1rem;
-        margin: 1rem;
+        margin: 5rem;
         @include media-queris.laptops{font-size: 1.4rem;}
-        @include media-queris.mobile{width: 28rem;padding: 0rem;padding-left: 0rem; margin: 0rem;font-size: 1.2rem;text-align: center;align-content: center;}
+        @include media-queris.mobile{width: 95vw;padding: 0rem;padding-left: 0rem; margin: 0rem;font-size: 1.2rem;text-align: center;align-content: center;}
         }
         img{
            width: 30vw;

@@ -188,3 +188,25 @@ switch(seleccion){
 } 
 } while (seleccion !== "6");
  */
+/*clase 23/09 */
+/* function saludar(nombre){
+  console.log("hola: " + nombre);
+}
+
+let nombreUser = prompt("Ingrese su nombre: ");
+saludar(nombreUser); */
+
+/* function sumar(num1, num2){
+  console.log(num1 + num2);
+}
+
+sumar(5, 10); */
+//funciones flecha
+
+const sumar = (num1, num2) => {
+  console.log(num1 + num2);
+}
+
+const restar = num1 =>  console.log(num1 - 8);
+
+restar(10);

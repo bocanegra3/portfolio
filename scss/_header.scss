@@ -33,7 +33,7 @@ header{
          .menu{
               color:white!important;
               font-family: variables.$tipografia-nav;
-              font-size: 1.1rem;              
+              font-size: 2rem;              
                  &:hover{
                  color: #d65858!important;
                  background-color: #d6585871;                      
@@ -55,9 +55,7 @@ header{
               color:white!important;
                  &:hover{
                  color: #d65858!important;
-                 background-color: #d6585871;
-                 padding:  1rem;
-                 
+                 background-color: #d6585871;              
                     }
                 }
             }
