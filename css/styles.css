@@ -352,7 +352,7 @@ main .maindex .titulopresentacion {
   padding-top: 5rem;
   text-align: center;
   color: antiquewhite;
-  font-family: "DM Serif Text", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
@@ -380,7 +380,7 @@ main .maindex h2.trabajospresentacion {
   width: 70vw;
   text-align: center;
   color: rgb(247, 174, 86);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "New Amsterdam", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
@@ -479,13 +479,13 @@ main .maindexport {
 main .maindexport .tituloproyectos {
   color: rgb(255, 255, 255);
   background: linear-gradient(45deg, rgb(218, 197, 116) 0%, rgb(208, 143, 23) 25%, rgb(178, 72, 0) 50%, rgb(134, 0, 0) 75%, rgb(80, 0, 0) 100%); /* Degradado de izquierda a derecha con tres colores */
-  -webkit-background-clip: text; /* Recorta el fondo a la forma del texto */
+  background-clip: text; /* Recorta el fondo a la forma del texto */
   color: transparent; /* Hace que el color de relleno del texto sea transparente */
   font-size: 5rem;
   padding: 3rem;
   display: flex;
   justify-content: center;
-  font-family: "DM Serif Text", serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 @media screen and (max-width: 1280px) {
   main .maindexport .tituloproyectos {
@@ -584,7 +584,7 @@ main .tituloquiensoy h1 {
 }
 main .tituloquiensoy h2 {
   font-size: xx-large;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "New Amsterdam", sans-serif;
   padding: 1rem;
   color: antiquewhite;
 }
@@ -604,8 +604,8 @@ main .sobremi {
   }
 }
 main .sobremi p {
-  font-size: 1.5rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+  font-family: "New Amsterdam", sans-serif;
   width: 50vw;
   padding: 3rem;
   padding-left: 1rem;
@@ -679,6 +679,62 @@ footer a:hover {
     position: absolute;
     top: 70rem;
   }
+}
+
+.mainform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainform .titulocontacto h1 {
+  font-size: 3rem;
+  display: block;
+  padding: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.mainform form {
+  text-align: center;
+  background: linear-gradient(90deg, rgb(27, 4, 5) 0%, rgb(58, 11, 0) 16.667%, rgb(94, 27, 0) 33.333%, rgb(132, 51, 0) 50%, rgb(166, 80, 1) 66.667%, rgb(194, 112, 13) 83.333%, rgb(212, 143, 28) 100%);
+  padding: 1rem 3rem 1rem 0rem;
+}
+.mainform form h2 {
+  color: #d65858;
+  font-size: 3rem;
+  font-family: "New Amsterdam", sans-serif;
+  color: black;
+  font-weight: 500;
+  text-align: right;
+}
+.mainform form .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.mainform form .input-group label {
+  color: #d65858;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-left: 16px;
+  font-style: oblique;
+  color: white;
+}
+.mainform form .input-group input, .mainform form .input-group textarea {
+  color: #000000;
+  outline: none;
+  padding: 0.6rem;
+  width: 23rem;
+  border-radius: 2rem !important;
+}
+.mainform form .input-group .bnt {
+  background: #d1571f;
+  border-color: orange;
+  color: orange;
+}
+.mainform form .input-group .bnt:hover {
+  background: orange;
+  border-color: black;
+  color: black;
 }
 
 body {

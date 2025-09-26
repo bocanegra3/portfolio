@@ -1,0 +1,55 @@
+@use 'media-queris';
+@use 'mixins';
+@use 'variables';
+@use 'keyframes';
+
+.mainform{     
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .titulocontacto{
+        h1{
+        font-size: 3rem;
+        display: block;
+        padding: 2rem;
+        font-family: variables.$tipografia-terc;
+        }
+    }
+    form{       
+        text-align: center;      
+        background: linear-gradient(90deg, rgba(27, 4, 5, 1.000) 0.000%, rgba(58, 11, 0, 1.000) 16.667%, rgba(94, 27, 0, 1.000) 33.333%, rgba(132, 51, 0, 1.000) 50.000%, rgba(166, 80, 1, 1.000) 66.667%, rgba(194, 112, 13, 1.000) 83.333%, rgba(212, 143, 28, 1.000) 100.000%);
+        padding:1rem 3rem 1rem 0rem;
+
+        h2{
+            color:variables.$color-orange;
+            font-size: 3rem;
+            font-family: variables.$tipografia-sec;
+            color:black;
+            font-weight: 500;
+            text-align: right;
+        }
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            label{
+                color:variables.$color-orange;
+                font-size: 1.3rem;
+                font-weight: 600;                
+                padding-left: 16px;
+                font-style: oblique;
+                color: white;
+            }
+            input, textarea{
+                color: variables.$color-black;
+                outline: none;
+                padding: 0.6rem;
+                width: 23rem;
+                border-radius: 2rem!important;
+            }
+            .bnt{@include mixins.button(orange);}
+        }
+    }
+}

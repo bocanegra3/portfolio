@@ -75,8 +75,26 @@
         </div>
       </nav>
     </header>
-    <main>
-
+    <main class="mainform">
+      <div class="titulocontacto">
+        <h1>Envie un mensaje para ponerse en contacto</h1>
+      </div>
+      <form>
+        <h2>contacto</h2>
+        <div class="input-group">
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" id="name" placeholder="'Carlitos'">
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" placeholder="'Perez'">
+          <label for="asunto">Asunto:</label>
+          <input type="text" name="asunto" id="asunto" placeholder="'pagina web'">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="'carlitosperez@email.com'">
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="'Quisiera contratar...gracias'"></textarea>
+          <input class="bnt" type="submit" value="Enviar">
+        </div>
+      </form>
     </main>
     <footer>
       <a href="https://github.com/bocanegra3" target="_blank">GitHub</a>
