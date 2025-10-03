@@ -92,7 +92,7 @@ switch(edadIngresada){
         console.log('no estas entre los dos codigos');
         break;
 } */
-/*ecommerce de compra de comida */
+/*ecommerce de compra de comida--------------------------------------------------clase 2 *****/
 /* let total = 0;
 let seleccion; 
 let eliminar;
@@ -188,7 +188,7 @@ switch(seleccion){
 } 
 } while (seleccion !== "6");
  */
-/*clase 23/09 */
+/*clase 23/09-------------------------------------------------------------------------------------- */
 /* function saludar(nombre){
   console.log("hola: " + nombre);
 }
@@ -203,10 +203,91 @@ saludar(nombreUser); */
 sumar(5, 10); */
 //funciones flecha
 
-const sumar = (num1, num2) => {
+/* const sumar = (num1, num2) => {
   console.log(num1 + num2);
 }
 
 const restar = num1 =>  console.log(num1 - 8);
 
-restar(10);
+restar(10); */
+/*clase 30/09/25 ------------------------------------------------------------------------------*/
+//arrays crtl + space......................................................................
+/* let nombre = ["Juan", "Ana", "Carlos"];// array de strings
+let edades = [25, 60, 33];//array de números
+let booleans = [true, false, true];//array booleano */
+/* let mixto = ["hola", 34, true, null];//array mixto */
+
+/*  console.log(nombre[1]);
+console.log(edades[2]);
+console.log(booleans[2]);
+
+edades[0] = 26;
+
+console.log(edades);
+
+//recorre un array
+
+for(let i = 0; i < nombre.length; i++){
+  console.log(nombre[i]); */
+/*} */
+/* 
+// push se utiliza para agregar elementos ej:
+nombre.push("Esteban");
+//unshift se utiliza para agregar un elemento al inicio ej:
+nombre.unshift("Estela");
+//pop se utiliza para quitar el ultimo elemento del array ej:
+nombre.pop();
+//shift se utiliza para quitar el primer elemento del array ej:
+nombre.shift();
+//Join se utiliza para generar un string con los elementos del array separados por el valor que pasamos en el parametro.
+console.log(nombre.join(" "));
+//indexOf nos devuelve el indice de un elemento en el array ej: * sirve para
+console.log(nombre.indexOf("Carlos"));
+//includes sirve para saber si el elemento que le mandamos por parametro esta o no. ej:
+console.log(nombre.includes("Carlos"));
+/* if (console.log(nombre.includes("Carlos"))){
+  console.log("Esta Carlos en la lista");
+} */
+//sort ordena el array
+//reverse lo ordena alrevez
+// como hacer una copia de un array
+/*const edadesCopia = [...edades];
+
+console.log(edadesCopia.sort());
+console.log(edades);
+//sugar sintax
+console.log(nombre); */
+
+//objetos literales, Clave = nombre , Valor = Nicolas.......................................
+/* let persona = {
+  nombre: 'Nicolas',
+  edad: 24,
+  direccion: 'San Antonio',
+  apellidos: ["Bocanegra","D'Angelo"]  
+}
+console.log(persona) */
+
+/* let tapiz = { id:1 , nombre:'gatovolador', precio:15000}
+let tapiz1 = { id:2 , nombre:'sapovolador', precio:12000}
+let tapiz2 = { id:3 , nombre:'pavovolador', precio:13000}
+let tapiz3 = { id:4 , nombre:'perrovolador', precio:16000}
+
+let productos = [tapiz,tapiz1,tapiz2,tapiz3];
+
+tapiz.precio = 20000;
+productos.push(tapiz4={id:5, nombre:'paloma', precio:17000})
+
+delete tapiz3.precio;
+
+let carrito= [];
+
+carrito.push(tapiz1.nombre);
+
+for(const prod of productos){
+  prod.precio = prod.precio * 1.21;
+}
+
+console.log(productos);
+
+console.log(carrito); */
+
