@@ -267,6 +267,7 @@
   padding: 0.6rem;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
 }
 
 .nav__menu {
@@ -289,6 +290,21 @@
   .nav__menu {
     display: flex;
     gap: 0.5rem;
+  }
+}
+@media (max-width: 653px) {
+  .nav__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .nav {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 :root {
