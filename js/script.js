@@ -1,3 +1,25 @@
+const toggle = document.getElementById('navToggle');
+const menu = document.getElementById('navMenu');
+
+const isWide = () => matchMedia('(min-width: 900px)').matches;
+function setDesktopIfWide(){
+  if(isWide()){
+    menu.style.display = 'flex';
+    toggle.setAttribute('aria-expanded', 'false');
+  } else {
+    menu.style.display = 'none';
+  }
+}
+setDesktopIfWide();
+addEventListener('resize', setDesktopIfWide);
+
+toggle.addEventListener('click', () => {
+  const open = menu.style.display === 'flex';
+  menu.style.display = open ? 'none' : 'flex';
+  toggle.setAttribute('aria-expanded', String(!open));
+});
+
+
 /* //Variable: Es un espacio de memoria reservado para almacenar informacion importante del programa.
 console.log("El script está funcionando correctamente!");
 

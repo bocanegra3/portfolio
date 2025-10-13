@@ -2,6 +2,12 @@
 @use 'mixins';
 @use 'keyframes';
 @use 'variables';
+@forward 'tokens';
+@forward 'base';
+@forward 'layout';
+@forward 'header';
+@forward 'card';
+
 main{
     color:white;
     /*index*/

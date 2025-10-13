@@ -1,69 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeveloperBocanegra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script defer src="../js/script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos | Fran Dev</title>
+  <meta name="description" content="Portfolio de proyectos de Fran: trabajos web, experimentos y demos." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- Tip: agrega favicon si tenés -->
 </head>
 <body>
+  <!-- Header consistente con el plan -->
+  <header class="header">
+    <div class="container nav">
+      <a class="nav__logo" href="../index.html">
+       <img src="../assets/img/Logo Tecnológico Bocanegra Developer.png" alt="Logo Fran" width="156" height="156"> 
+      </a>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid navbar-container">
-    <img class="navbar-brand logo" src="../assets/img/logo.png" alt="logo">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse --bs-light-text-emphasis" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-list">
-        <li class="nav-item nav-list">
-          <a class="nav-link menu" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item  nav-list">
-          <a class="nav-link active menu" aria-current="page" href="#">Portfolio</a>
-        </li>
-                <li class="nav-item  nav-list">
-          <a class="nav-link menu" href="../pages/quiensoy.html">Quien soy</a>
-        </li>
-        <li class="nav-item  nav-list">
-          <a class="nav-link menu" href="../pages/contacto.html">Contacto</a>
-        </li>       
-      </ul>
-<!--       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success buttonnr" type="submit">Search</button>
-      </form> -->
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">☰</button>
+
+      <nav id="navMenu" class="nav__menu" aria-label="Principal">
+        <a class="nav__link" href="../index.html">Inicio</a>
+        <a class="nav__link" aria-current="page" href="./portfolio.html">Proyectos</a>
+        <a class="nav__link" href="./cursos.html">Cursos</a>
+        <a class="nav__link" href="./sobreMi.html">Sobre mí</a>
+        <a class="nav__link" href="./contacto.html">Contacto</a>
+      </nav>
     </div>
-  </div>
-</nav>
+  </header>
+
+  <main id="main" class="section" aria-labelledby="titulo-pagina">
+    <div class="container">
+      <h1 id="titulo-pagina" style="margin:0 0 .75rem;">Proyectos</h1>
+      <p style="color:var(--muted); max-width:65ch; margin:0 0 1.25rem;">
+        Selección de trabajos y experimentos. Cada tarjeta incluye demo y código.
+      </p>
+
+    
+<div class="grid" role="list">
+  <!-- Card 1 -->
+  <article class="card" role="listitem">
+    <div class="card__media">
+      <img src="../assets/img/espaciocaudal.png" alt="Captura de Espacio Caudal" loading="lazy" />
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Espacio Caudal</h2>
+      <p class="card__desc">
+        Sitio informativo con diseño responsive, tipografía clara y animaciones sutiles.
+      </p>
+    </div>
+    <div class="card__actions">
+      <a class="btn" href="https://espacio-caudal.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+      <a class="btn btn--ghost" href="https://github.com/bocanegra3/EspacioCaudal" target="_blank" rel="noopener">Código</a>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card" role="listitem">
+    <div class="card__media">
+      <img src="../assets/img/mateWeb.png" alt="Captura del proyecto Mate Web" loading="lazy" />
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Mate Web</h2>
+      <p class="card__desc">
+        Landing temática con componentes reutilizables y estructura semántica.
+      </p>
+    </div>
+    <div class="card__actions">
+      <a class="btn" href="https://bocanegra3.github.io/mate-web/" target="_blank" rel="noopener">Ver demo</a>
+      <a class="btn btn--ghost" href="https://github.com/bocanegra3/mate-web" target="_blank" rel="noopener">Código</a>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card" role="listitem">
+    <div class="card__media">
+      <img src="../assets/img/proyectpizzas.png" alt="Captura del e-commerce de pizzas" loading="lazy" />
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Project Pizzas</h2>
+      <p class="card__desc">
+        Concepto de e-commerce: grid, cards y botones accesibles listos para integrar.
+      </p>
+    </div>
+    <div class="card__actions">
+      <a class="btn" href="https://bocanegra3.github.io/projects_pizzas/" target="_blank" rel="noopener">Ver demo</a>
+      <a class="btn btn--ghost" href="https://github.com/bocanegra3/projects_pizzas" target="_blank" rel="noopener">Código</a>
+    </div>
+  </article>
+
+  <!-- Card 4 (NUEVA) -->
+  <article class="card" role="listitem">
+    <div class="card__media">
+      <img src="../assets/img/RamdonEmojis.png" alt="Captura del Ramdon Emojis" loading="lazy" />
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Random Emojis</h2>
+      <p class="card__desc">
+        Un sitio Web sencillo donde se utilizó el metodo de JS math.random para su composición.
+      </p>
+    </div>
+    <div class="card__actions">
+      <a class="btn" href="https://bocanegra3.github.io/projects-emojis/" target="_blank" rel="noopener">Ver demo</a>
+      <a class="btn btn--ghost" href="https://github.com/bocanegra3/projects-emojis/tree/main" target="_blank" rel="noopener">Código</a>
+    </div>
+  </article>
+
+  <!-- Card 5 (NUEVA) -->
+  <article class="card" role="listitem">
+    <div class="card__media">
+      <img src="../assets/img/Coloresaleatoriosengraffiti.png" alt="Captura de Random Colors" loading="lazy" />
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Random Colors</h2>
+      <p class="card__desc">
+        Este sitio al igual que Random Emojis fue creado con math.random ,disparando un color distinto por cada actualizacion.
+      </p>
+    </div>
+    <div class="card__actions">
+      <a class="btn" href="https://bocanegra3.github.io/RandomColors/" target="_blank" rel="noopener">Ver demo</a>
+      <a class="btn btn--ghost" href="https://github.com/bocanegra3/RandomColors" target="_blank" rel="noopener">Código</a>
+    </div>
+  </article>
+
+  <!-- Card 6 (NUEVA) -->
+  <article class="card" role="listitem">
+    <div class="card__media">
+      <img src="../assets/img/tuttifrutti.png" alt="imagen de la aplicacion para jugar al tuttifruti" loading="lazy" />
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Tutti Frutti Web</h2>
+      <p class="card__desc">
+        Da letras aleatoriamente, descartando las ya utilizadas , con posibilidad de reiniciar gracias a un boton.
+      </p>
+    </div>
+    <div class="card__actions">
+      <a class="btn" href="https://tuttifruti.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+      <a class="btn btn--ghost" href="https://github.com/bocanegra3/Tutti.Frutty.web" target="_blank" rel="noopener">Código</a>
+    </div>
+  </article>
 </div>
-    </header>
-    <main>
-      <div class="maindexport">
-      <h1 class="tituloproyectos">PROYECTOS EN GITHUB</h1>
-      <h2 class="subtituloproyectos">Selección de proyectos que reflejan mi práctica y aprendizaje.</h2>
-    </div>
-
-    <div class="imgportfolio">
-      <ul>
-        <li><a class="linklogoproy" href="https://espacio-caudal.netlify.app/" target="_blank"><img src="../assets/img/logocrudo.png" class="img-thumbnail rounded float-start logoproyecto bounce-in-top" alt="logo espacio caudal"></a></li>
-        <li><a class="linklogoproy" href="https://bocanegra3.github.io/mate-web/" target="_blank"><img src="../assets/img/mateweblogo.png" class="img-thumbnail rounded float-start logoproyecto bounce-in-top" alt="logo mate web"></a></li>
-        <li><a class="linklogoproy" href="https://bocanegra3.github.io/projects_pizzas/" target="_blank"><img src="../assets/img/logoppizzas.png" class="img-thumbnail rounded float-start logoproyecto bounce-in-top" alt="logo project pizzas"></a></li>
-        <li><a class="linklogoproy" href="https://bocanegra3.github.io/projects-emojis/" target="_blank"><img src="../assets/img/logoemojis.png" class="img-thumbnail rounded float-start logoproyecto bounce-in-top" alt="logo project emojis"></a></li>
-        <li><a class="linklogoproy" href="https://bocanegra3.github.io/RandomColors/" target="_blank"><img src="../assets/img/logorandomcolors.png" class="img-thumbnail rounded float-start logoproyecto bounce-in-top" alt="logo Random colors"></a></li>
-        <li><a class="linklogoproy" href="https://tuttifruti.netlify.app/" target="_blank"><img src="../assets/img/tuttilogo.jpg" class="img-thumbnail rounded float-start logoproyecto bounce-in-top" alt="logo Tutti Frutti Web"></a></li>
-        </ul>
-</div>
 
     </div>
-    </main>
-    <footer>
-<a href="https://github.com/bocanegra3" target="_blank">GitHub</a>
+  </main>
 
-    </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="links" aria-label="Redes">
+        <a href="https://github.com/bocanegra3" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/franco-bocanegra-developer/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="franco.bocanegra@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

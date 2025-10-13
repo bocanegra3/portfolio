@@ -2,69 +2,18 @@
 @use 'mixins';
 @use 'variables';
 @use 'keyframes';
-header{
-
-    .navbar-container{
-        gap:17rem;
-        height: 5rem;
-        @include media-queris.laptops{gap:6rem;height: 4rem;}
-        @include media-queris.mobile{gap:3rem;height: 1rem;}
-        .logo{
-        width: 10vw;
-        @include media-queris.laptops{width: 15vw;}
-        @include media-queris.mobile{width:90vw}
-    }
-        .navbar-toggler {
-       background: rgb(255, 136, 0)!important;
-             @include media-queris.mobile{        
-            position: absolute;
-            right: 1rem;
-            top: 7rem;
-        }  
-        }
-        div.navbar-collapse{
-            gap:3rem;
-        @include media-queris.mobile{
-        background-color: black;
-        z-index: 100;
-        }
-        .navbar-list{
-        gap:10rem; 
-         .menu{
-              color:white!important;
-              font-family: variables.$tipografia-sec;
-              font-size: 2rem;              
-                 &:hover{
-                 color: #d65858!important;
-                 background-color: #d6585871;                      
-                    }
-                }
-        @include media-queris.laptops{gap:4rem;}  
-     @include media-queris.mobile{
-                display: grid;
-                flex-wrap: wrap;
-                justify-items: center;
-                margin: 0 !important;
-                background: black;
-                padding-left:8rem;
-                padding-right:8rem;
-                .nav-list{
-                position:static;
-                
-            .menu{
-              color:white!important;
-                 &:hover{
-                 color: #d65858!important;
-                 background-color: #d6585871;              
-                    }
-                }
-            }
-        }    
-    }
-        
-          
-        
-        }
-    }
-    .buttonnr{@include mixins.button(orange); }
+.header{
+  position:sticky; top:0; z-index:10; backdrop-filter:saturate(1.2) blur(8px);
+  background: color-mix(in oklab, var(--bg), transparent 20%);
+  border-bottom: 1px solid color-mix(in oklab, var(--fg), transparent 88%);
+}
+.nav{ display:flex; align-items:center; justify-content:space-between; gap: var(--space-2) }
+.nav__logo{ display:flex; align-items:center; gap:.6rem; font-weight:800 }
+.nav__toggle{ display:inline-flex; border:0; background:transparent; padding:.6rem; border-radius:10px; cursor:pointer }
+.nav__menu{ display:none }
+.nav__link{ padding:.6rem .9rem; border-radius:10px }
+.nav__link:hover, .nav__link:focus-visible{ background: color-mix(in oklab, var(--fg), transparent 90%) }
+@media (min-width: 900px){
+  .nav__toggle{ display:none }
+  .nav__menu{ display:flex; gap:.5rem }
 }

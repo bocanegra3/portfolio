@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cursos | Fran Dev</title>
+  <meta name="description" content="Recorrido formativo de Fran: web, PHP/MySQL, Tecnicatura UNSAM, Coderhouse (HTML, CSS, Node.js, JavaScript y React)." />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <!-- Header consistente -->
+  <header class="header">
+    <div class="container nav">
+      <a class="nav__logo" href="../index.html">
+        <img src="../assets/img/Logo Tecnológico Bocanegra Developer.png" alt="Logo Fran" width="156" height="156"> 
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">☰</button>
+
+      <nav id="navMenu" class="nav__menu" aria-label="Principal">
+        <a class="nav__link" href="../index.html">Inicio</a>
+        <a class="nav__link" href="./portfolio.html">Proyectos</a>
+        <a class="nav__link" aria-current="page" href="./cursos.html">Cursos</a>
+        <a class="nav__link" href="./sobreMi.html">Sobre mí</a>
+        <a class="nav__link" href="./contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section" aria-labelledby="titulo-pagina">
+    <div class="container">
+      <h1 id="titulo-pagina" style="margin:0 0 .75rem;">Cursos y formación</h1>
+      <p style="color:var(--muted); max-width:65ch; margin:0 0 1.5rem;">
+        Mi camino de aprendizaje en desarrollo web, con foco en bases sólidas y práctica constante.
+      </p>
+
+      <!-- Estado actual -->
+      <section class="status card" aria-labelledby="estado-actual">
+        <div class="card__body">
+          <h2 id="estado-actual" class="card__title">Estado actual (2025)</h2>
+          <p class="card__desc">
+            Cursando <strong>JavaScript</strong> en Coderhouse y, en paralelo, iniciando <strong>React JS</strong>.
+            Ya completé los módulos de <strong>HTML</strong>, <strong>CSS</strong> y <strong>Node.js</strong>.
+          </p>
+          <div class="card__actions">
+            <a class="btn" href="./portfolio.html">Ver proyectos</a>
+            <a class="btn btn--ghost" href="./contacto.html">Contactarme</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Línea de tiempo -->
+      <section class="section" aria-labelledby="timeline-title">
+        <h2 id="timeline-title" style="margin:0 0 1rem;">Línea de tiempo</h2>
+
+        <ol class="timeline" role="list">
+          <li class="timeline__item">
+            <div class="timeline__year">2022</div>
+            <div class="timeline__card card">
+              <div class="card__body">
+                <h3 class="card__title">Introducción a la Programación Web</h3>
+                <p class="card__desc">
+                  Primer contacto formal con el desarrollo web. Me abrió la puerta al mundo de la programación y me dejó con muchas ganas de seguir aprendiendo.
+                </p>
+                <ul class="timeline__tags" aria-label="Tecnologías">
+                  <li>HTML</li><li>CSS</li><li>Lógica</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__year">2023</div>
+            <div class="timeline__card card">
+              <div class="card__body">
+                <h3 class="card__title">PHP y MySQL — UTN (online)</h3>
+                <p class="card__desc">
+                  Me metí de lleno en backend clásico: manejo de formularios, CRUD, conexión a base de datos y nociones de arquitectura en el servidor.
+                </p>
+                <ul class="timeline__tags" aria-label="Tecnologías">
+                  <li>PHP</li><li>MySQL</li><li>CRUD</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__year">2024</div>
+            <div class="timeline__card card">
+              <div class="card__body">
+                <h3 class="card__title">Tecnicatura en Programación — UNSAM</h3>
+                <p class="card__desc">
+                  Me inscribí a la Tecnicatura y completé el <strong>CPU (ingreso)</strong> fortalecí bases teóricas y hábitos de estudio , lugar donde sigo cursando actualmente en el primer año de la carrera.
+                </p>
+                <ul class="timeline__tags" aria-label="Ejes">
+                  <li>Algoritmos</li><li>Resolución de problemas</li><li>Fundamentos</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__year">2025</div>
+            <div class="timeline__card card">
+              <div class="card__body">
+                <h3 class="card__title">Coderhouse — Desarrollo Web</h3>
+                <p class="card__desc">
+                  A mitad de año inicié la cursada. Completé <strong>HTML</strong>, <strong>CSS</strong> y <strong>Node.js</strong>. Actualmente cursando <strong>JavaScript</strong> y, semanas después, comencé <strong>React JS</strong>.
+                </p>
+                <ul class="timeline__tags" aria-label="Tecnologías">
+                  <li>HTML</li><li>CSS</li><li>Node.js</li><li>JavaScript</li><li>React</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="links" aria-label="Redes">
+        <a href="https://github.com/bocanegra3" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:tuemail@ejemplo.com">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
+  </html>

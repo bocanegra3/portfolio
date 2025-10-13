@@ -8,8 +8,8 @@ footer{
     justify-content: flex-end;
     a{
     @include mixins.button(white);    
-    border-radius: 1rem;    
-    margin:1rem;
+    border-radius: 0.3rem;    
+    margin:0.1rem;
     text-decoration: none;         
     color: black;
     background: white;
@@ -17,15 +17,14 @@ footer{
     -webkit-animation: blink-1 0.6s both;
 	        animation: blink-1 0.6s both;
        &:hover{
-            background:orange;
+            background:rgb(64, 145, 238);
             color:white;
         	-webkit-animation: vibrate-1 0.3s linear infinite both;
 	        animation: vibrate-1 0.3s linear infinite both;
 
         }
         @include media-queris.mobile{
-            position: absolute;
-            top:70rem
+            margin: 0rem;
         }
     }
 }

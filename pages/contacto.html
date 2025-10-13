@@ -1,104 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeveloperBocanegra</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <script defer src="../js/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid navbar-container">
-          <img
-            class="navbar-brand logo"
-            src="../assets/img/logo.png"
-            alt="logo"
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse --bs-light-text-emphasis"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-list">
-              <li class="nav-item nav-list">
-                <a
-                  class="nav-link menu"
-                  aria-current="page"
-                  href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item nav-list">
-                <a class="nav-link menu" href="../pages/portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item nav-list">
-                <a class="nav-link menu" href="../pages/quiensoy.html">Quien soy</a>
-              </li>
-              <li class="nav-item nav-list">
-                <a class="nav-link active menu" href="#"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-            <!-- <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success buttonnr" type="submit">
-                Search
-              </button>
-            </form> -->
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | Fran Dev</title>
+  <meta name="description" content="Contactá a Fran para proyectos web, colaboraciones o consultas técnicas." />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <!-- Header consistente -->
+  <header class="header">
+    <div class="container nav">
+      <a class="nav__logo" href="../index.html">
+      <img src="../assets/img/Logo Tecnológico Bocanegra Developer.png" alt="Logo Fran" width="156" height="156"> 
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">☰</button>
+
+      <nav id="navMenu" class="nav__menu" aria-label="Principal">
+        <a class="nav__link" href="../index.html">Inicio</a>
+        <a class="nav__link" href="./portfolio.html">Proyectos</a>
+        <a class="nav__link" href="./cursos.html">Cursos</a>
+        <a class="nav__link" href="./sobreMi.html">Sobre mí</a>
+        <a class="nav__link" aria-current="page" href="./contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section" aria-labelledby="titulo-pagina">
+    <div class="container">
+      <h1 id="titulo-pagina" style="margin:0 0 .75rem;">Contacto</h1>
+      <p style="color:var(--muted); max-width:65ch; margin:0 0 1.25rem;">
+        Escribime y te respondo a la brevedad. Los campos marcados con * son obligatorios.
+      </p>
+
+      <!-- Formulario accesible -->
+      <form id="contactForm" class="contact" method="post" action="https://formsubmit.co/02cf8cf7b4f6e0ab6cf3ffe86b96d4d6 " novalidate>
+        <div class="contact__row">
+          <div class="field">
+            <label for="name">Nombre </label>
+            <input id="name" name="name" type="text" placeholder="Tu nombre" required
+                   autocomplete="name" inputmode="text" />
+            
+          </div>
+
+          <div class="field">
+            <label for="email">Email </label>
+            <input id="email" name="email" type="email" placeholder="tu@mail.com" required
+                   autocomplete="email" inputmode="email" />
+            
           </div>
         </div>
-      </nav>
-    </header>
-    <main class="mainform">
-      <div class="titulocontacto">
-        <h1>Envie un mensaje para ponerse en contacto</h1>
-      </div>
-      <form>
-        <h2>contacto</h2>
-        <div class="input-group">
-          <label for="name">Nombre:</label>
-          <input type="text" name="name" id="name" placeholder="'Carlitos'">
-          <label for="apellido">Apellido:</label>
-          <input type="text" name="apellido" id="apellido" placeholder="'Perez'">
-          <label for="asunto">Asunto:</label>
-          <input type="text" name="asunto" id="asunto" placeholder="'pagina web'">
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="'carlitosperez@email.com'">
-          <label for="mensaje">Mensaje:</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="'Quisiera contratar...gracias'"></textarea>
-          <input class="bnt" type="submit" value="Enviar">
+
+        <div class="field">
+          <label for="subject">Asunto </label>
+          <input id="subject" name="subject" type="text" placeholder="Tema del mensaje" required />
         </div>
+
+        <div class="field">
+          <label for="message">Mensaje </label>
+          <textarea id="message" name="message" rows="6" placeholder="Contame sobre tu idea o consulta..."
+                    required></textarea>
+        </div>
+
+        <!-- Honeypot anti-spam (oculto para personas, visible para bots) -->
+        <div class="sr-only" aria-hidden="true">
+          <label for="company">No completar este campo</label>
+          <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="contact__actions">
+          <button class="btn" type="submit" aria-label="Enviar mensaje" name="_next" value="http://127.0.0.1:5500/">Enviar</button>
+          <button class="btn btn--ghost" type="reset">Limpiar</button>
+        </div>
+
+        <!-- Mensajes de estado accesibles -->
+        <p id="formStatus" class="contact__status" aria-live="polite" role="status" hidden></p>
       </form>
-    </main>
-    <footer>
-      <a href="https://github.com/bocanegra3" target="_blank">GitHub</a>
-    </footer>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="links" aria-label="Redes">
+        <a href="https://github.com/bocanegra3" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/franco-bocanegra-developer/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="franco.bocanegra@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

@@ -1,0 +1,10 @@
+:root{
+  --bg: #0b1220; --fg: #e5e7eb; /* dark por defecto queda lindo */
+  --bg-surface:#0f172a; --muted:#94a3b8;
+  --brand:#60a5fa; --brand-press:#3b82f6;
+  --radius: 16px; --shadow: 0 10px 24px rgba(0,0,0,.25);
+  --space-1: .5rem; --space-2: 1rem; --space-3: 1.5rem; --space-4: 2rem;
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#f8fafc; --fg:#0f172a; --bg-surface:#fff; --muted:#64748b; --shadow:0 10px 24px rgba(0,0,0,.08); }
+}

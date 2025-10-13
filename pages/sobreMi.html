@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mí | Fran Dev</title>
+  <meta name="description" content="Conocé a Fran: programador en formación, creativo y apasionado por el desarrollo web y los proyectos digitales." />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <!-- Header igual que en las demás páginas -->
+  <header class="header">
+    <div class="container nav">
+      <a class="nav__logo" href="../index.html">
+       <img src="../assets/img/Logo Tecnológico Bocanegra Developer.png" alt="Logo Fran" width="156" height="156"> 
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">☰</button>
+
+      <nav id="navMenu" class="nav__menu" aria-label="Principal">
+        <a class="nav__link" href="../index.html">Inicio</a>
+        <a class="nav__link" href="./portfolio.html">Proyectos</a>
+        <a class="nav__link" href="./cursos.html">Cursos</a>
+        <a class="nav__link" aria-current="page" href="./sobreMi.html">Sobre mí</a>
+        <a class="nav__link" href="./contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section" aria-labelledby="titulo-pagina">
+    <div class="container">
+      <h1 id="titulo-pagina" style="margin:0 0 .75rem;">Sobre mí</h1>
+      <p style="color:var(--muted); max-width:65ch; margin:0 0 1.5rem;">
+        Un poco de mi historia y lo que me motiva como desarrollador.
+      </p>
+
+      <section class="profile">
+        <div class="profile__img ">
+          <img src="../assets/img/fotoCarnet.jpeg" class="imgpropia" alt="Foto de Fran" loading="lazy" />
+        </div>
+        <div class="profile__info">
+          <h2>Hola, soy Fran 👋</h2>
+          <p>
+            Soy un apasionado del desarrollo web y la creatividad. Estudio programación desde hace varios años y me interesa tanto el lado técnico como el artístico de los proyectos digitales.
+          </p>
+          <p>
+            Actualmente me estoy enfocando en <strong>JavaScript, React y diseño web responsivo</strong>, además de construir un portfolio sólido con proyectos reales.
+          </p>
+          <p>
+            Más allá del código, disfruto del <em>teatro, la fotografía y la exploración creativa</em>, buscando siempre unir valores como la empatía, la presencia y el trabajo en equipo en todo lo que hago.
+          </p>
+          <a href="./contacto.html" class="btn">Contáctame</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+       <div class="links" aria-label="Redes">
+        <a href="https://github.com/bocanegra3" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:tuemail@ejemplo.com">Email</a>
+      </div>
+    </div>
+  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
