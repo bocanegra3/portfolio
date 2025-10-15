@@ -1,4 +1,5 @@
 @use 'keyframes';
+@use 'media-queris';
 
 *{ box-sizing:border-box }
 html,body{ height:100% }
@@ -7,7 +8,8 @@ body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Noto Sans", sans-serif;
 }
 img{ max-width:100%; height:auto; display:block; } 
-.imgpropia{ max-width:20%; height:auto; display:block;}
+.imgpropia{ max-width:20%; height:auto; display:block;
+@include media-queris.mobile{display:none;}}
 
 
 a{ color:inherit; text-decoration:none }

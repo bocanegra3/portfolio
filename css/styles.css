@@ -357,6 +357,11 @@ img {
   height: auto;
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .imgpropia {
+    display: none;
+  }
+}
 
 a {
   color: inherit;
@@ -854,6 +859,54 @@ main .sobremi img {
   .mainquiensoy {
     position: absolute;
     top: 11rem;
+  }
+}
+
+.contactoCaja {
+  display: flex;
+  padding: 0 20rem 0;
+}
+@media screen and (max-width: 768px) {
+  .contactoCaja form label, .contactoCaja textarea, .contactoCaja input {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contactoCaja form label, .contactoCaja textarea, .contactoCaja input {
+    width: 15rem;
+  }
+}
+@media (min-width: 1360px) {
+  .contactoCaja form label, .contactoCaja textarea, .contactoCaja input {
+    width: 25rem;
+  }
+}
+.contactoCaja img {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .contactoCaja img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contactoCaja img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactoCaja {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contactoCaja {
+    padding: 0 8rem 0 0;
+  }
+}
+@media (min-width: 1360px) {
+  .contactoCaja {
+    padding: 0 10rem;
   }
 }
 

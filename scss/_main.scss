@@ -217,3 +217,21 @@ button.shake-horizontal{
 
 }
 .mainquiensoy{@include media-queris.mobile{position: absolute;top:11rem;}}
+//contacto personalizado
+.contactoCaja{    
+    display: flex;
+    padding: 0 20rem 0;
+form label, textarea, input{
+    @include media-queris.mobile{width: 20rem; }
+    @include media-queris.laptops{width: 15rem;}
+    @media(min-width: 1360px){width: 25rem;}
+}
+img{
+width: 40%;
+@include media-queris.mobile{display: none;}
+@include media-queris.laptops{width: 40%;}
+}
+@include media-queris.mobile{ padding: 0;}
+@include media-queris.laptops{padding:0 8rem 0 0;}
+ @media(min-width: 1360px){padding:0 10rem;}
+}
